@@ -1,23 +1,22 @@
-miTexto = "hOla, que tAl estAis ?"
-miTextoCapitalizado = miTexto.capitalize()
-print(miTextoCapitalizado)
+mi_texto = "hOlA quE Tal EstAis?"
 
-miTextoEnMinus = miTexto.lower()
-print(miTextoEnMinus)
-miTextoEnMayus = miTexto.upper()
-print(miTextoEnMayus)
+mi_texto_capitalizado = mi_texto.capitalize()
+print(mi_texto_capitalizado)
 
-miTextoCambiado = miTextoEnMinus.replace('a','i')
-print(miTextoCambiado)
+mi_texto_minus = mi_texto.lower()
+print(mi_texto_minus)
 
-print(miTextoEnMinus.find('hola'))
-print(miTexto[0])
+mi_texto_mayus = mi_texto.upper()
+print(mi_texto_mayus)
 
+mi_texto_i = mi_texto.replace('A', 'i')
+print(mi_texto_i)
 
-miLista = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto']
-miCadena = ', '.join(miLista)
-miSegundaCadena = '-'.join(miLista)
-print(miCadena)
-print(miSegundaCadena)
+print(mi_texto.find('quE'))
 
-help(str)
+mi_lista = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto']
+mi_lista_en_str = ', '.join(mi_lista)
+print(mi_lista_en_str)
+
+long = len(mi_texto)
+print(long)
