@@ -12,3 +12,4 @@ Aquí puedes encontrar el índice numerado de los contenidos publicados del curs
 ## Clases en Youtube
 
  1. [Instalación de Python y configuración de VSCODE](https://youtu.be/xusfyrpJYgo)
+ 2. [Variables y Mutabilidad](https://youtu.be/oU2UtqNxGEc)
