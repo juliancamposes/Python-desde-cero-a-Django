@@ -12,4 +12,5 @@ Aquí puedes encontrar el índice numerado de los contenidos publicados del curs
 ## Clases en Youtube
 
  1. [Instalación de Python y configuración de VSCODE](https://youtu.be/xusfyrpJYgo)
- 2. [Variables y Mutabilidad](https://youtu.be/oU2UtqNxGEc)
+ 2. Variables y Mutabilidad - [(Clase Youtube)](https://youtu.be/oU2UtqNxGEc) [(Código)](https://github.com/juliancamposes/Python-desde-cero-a-Django/blob/main/lecciones/1.%20Tipos-de-datos.py)
+ 3. Tipos de datos en PYTHON - [(Clase Youtube)](https://youtu.be/CLZGibnqzsA) [(Código)](https://github.com/juliancamposes/Python-desde-cero-a-Django/blob/main/lecciones/1.%20Tipos-de-datos.py)
