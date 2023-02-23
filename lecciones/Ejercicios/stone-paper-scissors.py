@@ -91,9 +91,9 @@ def start_game():
 
         finish_game_input = input('Do you want to continue?(yes or no): ').lower
         if finish_game_input == 'yes':
-            finish_game = True
-        elif finish_game_input == 'no':
             finish_game = False
+        elif finish_game_input == 'no':
+            finish_game = True
         
     
 
