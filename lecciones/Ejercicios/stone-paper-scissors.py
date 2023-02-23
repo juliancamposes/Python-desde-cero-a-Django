@@ -1,4 +1,6 @@
 #Exercise: Stone, Paper and Scissors in Python applying conditionals, loops and functions
+# The code needs improvements: try-catch for possible input errors..
+# It will continue at twitch.tv/juliancampos_es
 import random
 
 def options():
