@@ -68,17 +68,19 @@ def start_game():
     user_option = ''
     computer_option = ''
     
+    print(' ')
     print('-- Welcome to the classic game Stone, Paper and Scissors --')
-    print('')
+    print(' ')
     print('You are going to play against the computer, the rules are very simple:')
     print('Each round,  you can choise one option: 1. Stone, 2. Paper and 3. Scissors')
     print('The computer will take a random option and we will check who is the winner' )
-    print('')
+    print(' ')
     print('-- Stone wins against the Scissors')
     print('-- Scissors wins against the Paper')
     print('-- Paper win against the Stone')
-    print('')
+    print(' ')
     print('Lets start the game')
+    print(' ')
     
 
 
@@ -86,6 +88,7 @@ def start_game():
         print('Round: ' + str(round_game))
         print('User score: ' + str(user_score))
         print('Computer score: '+ str(computer_score))
+        print(' ')
         
         user_option, computer_option = options()
         result = check_results(user_option, computer_option)
@@ -97,15 +100,21 @@ def start_game():
         elif result == 'Lose':
             computer_score += 1  
         elif result == 'Draw':
-            'This round is a draw'
+            print('This round is a draw')
+            print(' ')
             
         round_game += 1
 
         finish_game_input = input('Do you want to continue?(yes or no): ').lower
+        print(' ')
         if finish_game_input == 'yes':
             finish_game = False
         elif finish_game_input == 'no':
             finish_game = True
+        else:
+            print('The answer is not correct so... next round! ;-)')
+            print(' ')
+            finish_game = False
         
     
 
