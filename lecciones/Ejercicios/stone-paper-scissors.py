@@ -105,11 +105,17 @@ def start_game():
             
         round_game += 1
 
-        finish_game_input = input('Do you want to continue?(yes or no): ').lower
+        finish_game_input = input('Do you want to continue?(yes or no): ')
+        finish_game_input.lower()
         print(' ')
         if finish_game_input == 'yes':
             finish_game = False
         elif finish_game_input == 'no':
+            print('Game finished')
+            print(' ')
+            print('The result is: ')
+            print(' ')
+            print('You: ' + str(user_score) + ' - Computer: ' + str(computer_score) )
             finish_game = True
         else:
             print('The answer is not correct so... next round! ;-)')
