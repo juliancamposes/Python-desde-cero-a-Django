@@ -1,21 +1,27 @@
 #Exercise: Stone, Paper and Scissors in Python applying conditionals, loops and functions
-# The code needs improvements: try-catch for possible input errors..
-# It will continue at twitch.tv/juliancampos_es
+#The code needs improvements: try-catch for possible input errors..
+#It will continue at twitch.tv/juliancampos_es
 import random
 
 def options():
+    
     options = ('Stone','Paper','Scissors')
     print('The options are: ')
     print('1. Stone')
     print('2. Paper')
     print('3. Scissors')
+    
     user_option = int(input('Please, select your option with the number: '))
+    
+    #check if the input doesn't match with the options
+    #if not -> return None and None to continue the loop
+    if user_option != 1 and user_option != 2 and user_option != 3:
+        return None, None
+    
     user_option -= 1
     user_option = options[user_option]
-    print(user_option)
     
     computer_option = random.choice(options)
-    
     
     return user_option, computer_option
 
@@ -79,8 +85,11 @@ def start_game():
         print('Round: ' + str(round_game))
         print('User score: ' + str(user_score))
         print('Computer score: '+ str(computer_score))
+        
         user_option, computer_option = options()
         result = check_results(user_option, computer_option)
+        if user_option == None:
+            continue
         
         if result == 'Win':
             user_score += 1
