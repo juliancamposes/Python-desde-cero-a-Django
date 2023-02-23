@@ -16,6 +16,7 @@ def options():
     #check if the input doesn't match with the options
     #if not -> return None and None to continue the loop
     if user_option != 1 and user_option != 2 and user_option != 3:
+        print('The input is not correct')
         return None, None
     
     user_option -= 1
