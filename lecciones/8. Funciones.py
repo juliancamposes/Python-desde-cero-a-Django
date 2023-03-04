@@ -1,6 +1,6 @@
 #Funciones nos van a servir para poder reutilizar código sin tener que volver a escribirlo
 
-#Elementos de una función: 
+# Elementos de una función: 
 # def: palabra reservada para declarar una función
 # nombre de la funcion
 # (): van a servir para pasar parámetros o valores a la función que luego se utilizarán dentro de ello
@@ -25,46 +25,42 @@ def suma(a,b):
 suma_dos_numeros = suma(4, 3)
 print(suma_dos_numeros)
 
+print('-- Argumentos variables en formato tupla')
 
-#Funciones con un numero de argumentos variables
-def suma_de_x_numeros(*args):
-    suma = 0
+def suma_x_numeros(*args):
+    result = 0
     for x in args:
-        suma += x
-    print(suma)
+        result += x
+    print(result)
     
-suma_de_x_numeros(1,2,3,4,5,6,7,8,9,10,11,12)
+suma_x_numeros(1,2,6534,213,671235)
 
-def lista_viewers(*args):
-    for x in args:
-        print(x)
+print('-- Argumentos variables en formato diccionario')
 
-
-lista_viewers('snow','gold','julian','elon')
-
-#Argumentos variables pero con formato diccionario
 def suma_diccionario(**kargs):
-    i = 0
-    for clave, valor in kargs.items():
-        print(clave + " = " + str(valor))
-        i += valor
-    print(i)
-    
-suma_diccionario(x=3,y=2)
+    result  = 0
+    for clave,valor in kargs.items():
+        print(clave + ' = ' +str(valor))
+        result += valor
+    print(result)
 
-#
-def perro(a):
-    print("Mi perro se llama " + a)
+suma_diccionario(x=3,y=4)
+
+print('-- Argumentos con valores predeterminados')
+
+def perro(a = 'Txaku'):
+    print('Mi perro se llama ' + a)
     
-perro(a = "Txaku")
+perro(a = 'Perrito')
 
 def loro(tension, estado='muerto', accion='explotar', tipo='Azul Nordico'):
-    print('----------')
-    print("Este loro no va a " + accion)
-    print("si le aplicas " + str(tension) + " voltios")
-    print("Gran plumaje tiene el " + tipo)
-    print("Esta " + estado +"!")
-
-loro(3000)
-loro(1000, estado='vivo')
-loro(1000, accion ="volar")
+    print('-------')
+    print('Este loro no va a ' + accion)
+    print('si le aplicas ' + str(tension) +' voltios')
+    print('Gran plumaje tiene el ' + tipo)
+    print('Esta ' + estado + '!')
+    
+loro(10)
+loro(10, estado='vivo')
+loro(10, accion='volar')
+loro(10, estado = 'vivo', accion='volar')
